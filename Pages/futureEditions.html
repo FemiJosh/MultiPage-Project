@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Future Editions</title>
+    <link rel="stylesheet" href="/MultiPager/CSS/futureEdition.css">
+</head>
+<body>
+    <nav>
+        <img src="/MultiPager/images/lo.png" class="logo">
+        <ul class="nav-links">
+            <li> <a href="/MultiPager/Pages/#"> Categories </a> </li>
+            <li> <a href="/MultiPager/Pages/#"> Past editions </a> </li>
+            <li> <a href="/MultiPager/Pages/futureEditions.html"> Future editions </a> </li>
+            <li> <a href="/MultiPager/Pages/contawards.html"> About us </a> </li>
+            <li> <a href="/MultiPager/Pages/donation.html"> Make a donation </a> </li>
+            <li> <a href="/MultiPager/Pages/loginpage.html" class="phone-link"> Log In </a></li>
+            <li> <a href="/MultiPager/Pages/registerpage.html" class="phone-link">Create Account </a></li>
+        </ul>
+        <img src="/MultiPager/images/burger (2).png" class="burger">
+        <div class="profile">
+            <div class="profile-icon">
+                <img src="/MultiPager/images/energy1.png" class="profile-icon">
+                <span> 70 </span>
+            </div>
+               
+            <hr>
+            <div class="profile-name" id="theprofile">
+                <img src="/MultiPager/images/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+        </div>
+        <div class="logout-container">
+            <div class="profile-name">
+                <img src="/MultiPager/images/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+            <p> Log Out </p>
+        </div>
+    </nav>
+    <hr>
+    <header>
+        <h1>
+            Future Editions
+        </h1>
+       <p> Nominate canditates for future editions</p>
+    </header>
+
+    <section>
+            <div class="edition-boxes">
+                <div class="edition-box">
+                    <img src="/MultiPager/images/star.png" class="edition-icon">
+                    <span> East African Edition</span>
+                    <button>Nominate</button>
+                </div>
+                <div class="edition-box">
+                    <img src="/MultiPager/images/star.png" class="edition-icon">
+                    <span> South African Edition </span>
+                    <button>Nominate</button>
+                </div>
+                <div class="edition-box">
+                    <img src="/MultiPager/images/star.png" class="edition-icon">
+                    <span> North African Edition</span>
+                    <button>Nominate</button>
+                </div>
+                <div class="edition-box">
+                    <img src="/MultiPager/images/star.png" class="edition-icon">
+                    <span> West African Edition</span>
+                    <button>Nominate</button>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="link-boxes">
+            <div class="link-box">
+                <h4>
+                    About
+                </h4>
+                <ul>
+                    <li>The Connected Magazine</li>
+                    <li>Past Editions</li>
+                    <li> <a href="/MultiPager/Pages/donation.html">Make a Donation</a></li>
+                </ul>
+            </div>
+            <div class="link-box">
+                <h4>
+                    Legal
+                </h4>
+                <ul>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="link-box">
+                <h4>
+                    Follow
+                </h4>
+                <ul>
+                    <li>Linkedin</li>
+                </ul>
+            </div><div class="link-box">
+                <h4>
+                    Contact
+                </h4>
+                <ul>
+                    <li>+2348051718562</li>
+                    <li>Chat on Whatsapp</li>
+                    <li>femijoshua679@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <img src="/MultiPager/images/lo.png" class="footer-logo">
+    
+       <div class="footer-bottom">
+        <span>Connecting Techies Globally</span>
+        <span class="bottom-feeder"> 2022 The Connected Awards - All rights reserved</span>
+       </div>
+    </footer>
+    <script>
+        let logoutCont = document.querySelector('.logout-container');
+         let  profile =  document.querySelector('#theprofile');
+           profile.addEventListener('click',()=>{
+            appear();
+        })
+        function appear(){
+            logoutCont.classList.toggle('appear')
+        }
+
+        let navLinks = document.querySelector('.nav-links');
+        let cancel= document.querySelector('.cancel');
+        let burger = document.querySelector('.burger').addEventListener('click', (e)=>{
+            // event.target.src= cancel.src;
+    
+            navLinks.classList.toggle('show')
+        })
+       
+
+    </script>
+</body>
